@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "67ad6a1c7e284370e7594563"
+  },
+  "name": "Math",
+  "description": "Matematica basica",
+  "grade": "Fifth",
+  "state": true,
+  "teacher": {
+    "$oid": "67ac2b1d41a5d6d2e06910cf"
+  },
+  "createdAt": {
+    "$date": "2025-02-13T03:42:20.678Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-16T03:51:41.763Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ae9770dd344b82de6d5533"
+  },
+  "name": "Physics",
+  "description": "Energía potencial",
+  "grade": "Sixth",
+  "state": true,
+  "teacher": {
+    "$oid": "67ac2b1d41a5d6d2e06910cf"
+  },
+  "createdAt": {
+    "$date": "2025-02-14T01:08:00.889Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-16T03:55:37.237Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67afe576c6900bb2b863740e"
+  },
+  "name": "Computing",
+  "description": "Node JS",
+  "grade": "Sixth",
+  "state": true,
+  "teacher": {
+    "$oid": "67ae8cc413f9c0fe3d3b264c"
+  },
+  "createdAt": {
+    "$date": "2025-02-15T00:53:10.338Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-15T00:53:10.338Z"
+  }
+}]
