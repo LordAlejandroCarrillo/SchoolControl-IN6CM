@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "67ac2b1d41a5d6d2e06910cf"
+  },
+  "name": "Juan",
+  "surname": "Castillo",
+  "username": "jcastillo",
+  "email": "castillo@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$VM2OyAuFxtF6pEiv+vdd3g$L3IPCQriHofWiNyNJp5tOkIwS66TJp5ihu2WUAwbdic",
+  "phone": "54148052",
+  "role": "TEACHER_ROLE",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-12T05:01:17.207Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-16T03:55:37.237Z"
+  },
+  "subjects": []
+},
+{
+  "_id": {
+    "$oid": "67ae8cc413f9c0fe3d3b264c"
+  },
+  "name": "Pedro",
+  "surname": "Martinez",
+  "username": "pmartinez",
+  "email": "pedro@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$alqxyEKifl3TVD9Ar1WsQw$dsD/XCEtFINgLjO28dYy7fNyecC0STYnqsdyo81Uu6w",
+  "phone": "54148052",
+  "role": "TEACHER_ROLE",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-14T00:22:28.296Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-16T03:55:37.237Z"
+  },
+  "subjects": []
+},
+{
+  "_id": {
+    "$oid": "67afdfcebfeb20abdecd2eaf"
+  },
+  "name": "Mario",
+  "surname": "Velazquez",
+  "username": "marioV",
+  "email": "mario@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$bzVM8BFlb/NQGXfDYpa8WA$8KCfsnp4Ti689MdE8BWbaG0P3mtdF/kGHHB5rkeFKlg",
+  "phone": "54148052",
+  "role": "STUDENT_ROLE",
+  "subjects": [
+    {
+      "_id": {
+        "$oid": "67afe576c6900bb2b863740e"
+      },
+      "name": "Computing",
+      "description": "Node JS",
+      "grade": "Sixth",
+      "state": true,
+      "teacher": {
+        "$oid": "67ae8cc413f9c0fe3d3b264c"
+      },
+      "createdAt": {
+        "$date": "2025-02-15T00:53:10.338Z"
+      },
+      "updatedAt": {
+        "$date": "2025-02-15T00:53:10.338Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "67ae9770dd344b82de6d5533"
+      },
+      "name": "Physics",
+      "description": "Energía potencial",
+      "grade": "Sixth",
+      "state": true,
+      "teacher": {
+        "$oid": "67ac2b1d41a5d6d2e06910cf"
+      },
+      "createdAt": {
+        "$date": "2025-02-14T01:08:00.889Z"
+      },
+      "updatedAt": {
+        "$date": "2025-02-16T03:55:37.237Z"
+      }
+    }
+  ],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-15T00:29:02.817Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-16T03:57:07.775Z"
+  }
+}]
