@@ -1,0 +1,247 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "School",
+    "collectionId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+    "dateExported": "2025-02-16T03:59:59.651Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "8f04c719-579d-449e-a247-102e2c4b5dbf",
+            "name": "LogIn",
+            "containerId": "",
+            "created": "2025-02-12T03:11:57.527Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "Users",
+            "containerId": "",
+            "created": "2025-02-12T03:12:08.815Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "be6203c4-afee-4e34-b554-60a070bbe251",
+            "name": "Subjects",
+            "containerId": "",
+            "created": "2025-02-12T03:12:16.767Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b32a7fb4-21ae-4c8f-974d-a131aa144d2a",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "registerStudent",
+            "url": "http://localhost:3000/schoolSystem/v1/auth/register/student",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-12T04:54:03.841Z",
+            "modified": "2025-02-15T00:32:52.035Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Eduardo\",\n  \"surname\": \"Mendez\",\n  \"username\": \"emendez\",\n  \"email\": \"mendez@gmail.com\",\n  \"password\": \"12345678\",\n  \"phone\": \"54148052\",\n  \"role\": \"\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0d19994d-8bde-4fe3-8b03-f30bfef76885",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "8f04c719-579d-449e-a247-102e2c4b5dbf",
+            "name": "logIn",
+            "url": "http://localhost:3000/schoolSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-12T23:06:29.265Z",
+            "modified": "2025-02-16T03:56:58.294Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"mario@gmail.com\",\n  \"password\":\"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b79e12d2-1f50-4f62-a756-a04414e14039",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "be6203c4-afee-4e34-b554-60a070bbe251",
+            "name": "addSubject",
+            "url": "http://localhost:3000/schoolSystem/v1/subjects/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-12T22:42:11.014Z",
+            "modified": "2025-02-16T03:39:29.165Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FjMmIxZDQxYTVkNmQyZTA2OTEwY2YiLCJpYXQiOjE3Mzk2NzcxNTksImV4cCI6MTczOTY4NDM1OX0.QzwSlLHGh2F-kuvpr20nkun9J_3hvj0VRTfsa3Msukg"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Literature\",\n  \"description\" : \"Stuf about Shakespeare.\",\n  \"grade\" : \"Third\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "025a0f97-709a-4393-897a-a0ceb2f76e52",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "assignSubject",
+            "url": "http://localhost:3000/schoolSystem/v1/users/assign-subject/67ae9770dd344b82de6d5533",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2025-02-14T05:17:24.276Z",
+            "modified": "2025-02-16T03:57:07.777Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FmZGZjZWJmZWIyMGFiZGVjZDJlYWYiLCJpYXQiOjE3Mzk2NzgyMTgsImV4cCI6MTczOTY4NTQxOH0.qBZhIZ3M1MDiUO38C2UVvc3H0OuUn00SIcRfsKhJMcQ"
+                }
+            ]
+        },
+        {
+            "_id": "e5a2da79-0719-4ef8-bd87-d414ae11b202",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "registerTeacher",
+            "url": "http://localhost:3000/schoolSystem/v1/auth/register/teacher",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-15T00:29:22.510Z",
+            "modified": "2025-02-15T00:31:07.169Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Carlos\",\n  \"surname\":\"Martinez\",\n  \"username\":\"cmartinez\",\n  \"email\":\"martinez@gmail.com\",\n  \"password\":\"12345678\",\n  \"phone\":\"54148052\",\n  \"role\":\"TEACHER_ROLE\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "25b8b2ab-e7c2-419c-8bc4-85bd09e497e2",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "be6203c4-afee-4e34-b554-60a070bbe251",
+            "name": "putSubject",
+            "url": "http://localhost:3000/schoolSystem/v1/subjects/67ad6a1c7e284370e7594563",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-02-13T03:50:49.247Z",
+            "modified": "2025-02-16T03:41:47.449Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FjMmIxZDQxYTVkNmQyZTA2OTEwY2YiLCJpYXQiOjE3Mzk2NzcyNjEsImV4cCI6MTczOTY4NDQ2MX0.brE-pjhaO_eRa2qsYSgtFoTikDgD2MHrTdXhTSVfctY"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Math II\",\n  \"description\" : \"Matematica avanzada\",\n  \"grade\" : \"Seventh\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1cdebc85-3760-4d9d-9885-a737a2e035d2",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "be6203c4-afee-4e34-b554-60a070bbe251",
+            "name": "deleteSubject",
+            "url": "http://localhost:3000/schoolSystem/v1/subjects/67ae9770dd344b82de6d5533",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-02-14T00:33:01.927Z",
+            "modified": "2025-02-16T03:55:37.250Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FjMmIxZDQxYTVkNmQyZTA2OTEwY2YiLCJpYXQiOjE3Mzk2Nzc3OTAsImV4cCI6MTczOTY4NDk5MH0.MPUQIrNoWWaG9PH40FOq0GwJsByLHRqsasoZL_iLZgI"
+                }
+            ]
+        },
+        {
+            "_id": "1a36e838-ca7e-412b-88c8-53bf6a37ec3a",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "be6203c4-afee-4e34-b554-60a070bbe251",
+            "name": "getSubject",
+            "url": "http://localhost:3000/schoolSystem/v1/subjects/getSubjects",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-02-14T04:08:04.521Z",
+            "modified": "2025-02-16T03:53:41.366Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FjMmIxZDQxYTVkNmQyZTA2OTEwY2YiLCJpYXQiOjE3Mzk2NzgwMTUsImV4cCI6MTczOTY4NTIxNX0.9SqVDucReAiCdYY4x1M4riNRwTCKvYGMw_xx2hlgnXo"
+                }
+            ]
+        },
+        {
+            "_id": "5d500b7e-be86-41cf-993f-07e58fb00c84",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "getUsers",
+            "url": "http://localhost:3000/schoolSystem/v1/users/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-02-15T01:55:53.074Z",
+            "modified": "2025-02-15T01:56:06.652Z",
+            "headers": []
+        },
+        {
+            "_id": "d064ab5e-4e92-4485-ad7f-eb2db53e3855",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "getUserSubjects",
+            "url": "http://localhost:3000/schoolSystem/v1/users/own-subjects",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-02-15T01:56:20.486Z",
+            "modified": "2025-02-16T03:28:07.575Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FjMmIxZDQxYTVkNmQyZTA2OTEwY2YiLCJpYXQiOjE3Mzk2NzY0NzYsImV4cCI6MTczOTY4MzY3Nn0.gJfhOt7j4WJ1abOJ1NR0m8hPJ_PLtqPg6fEVUisVtgU"
+                }
+            ]
+        },
+        {
+            "_id": "a4d1b5db-f36c-4214-b707-bca14fad8bbc",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "putUser",
+            "url": "http://localhost:3000/schoolSystem/v1/users/update-user/67ae8cc413f9c0fe3d3b264c",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2025-02-15T05:30:14.266Z",
+            "modified": "2025-02-16T03:31:25.550Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FjMmIxZDQxYTVkNmQyZTA2OTEwY2YiLCJpYXQiOjE3Mzk2NzY1OTYsImV4cCI6MTczOTY4Mzc5Nn0.FzoKPSWnxVjxucjJRTkBlnIkuZnRUojom2a7aRKVwl0"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Hugo\",\n  \"surname\":\"Sanchez\",\n  \"username\":\"hsanchez\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "51bc91c9-c1c0-4d2b-902a-519c4e3f02fd",
+            "colId": "c3992c93-7dbd-49ef-9a3e-2a2b605480cb",
+            "containerId": "4e1305c9-874a-43f4-af82-4ebee2cf1885",
+            "name": "deleteUser",
+            "url": "http://localhost:3000/schoolSystem/v1/users/delete-user/67ac2b1d41a5d6d2e06910cf",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2025-02-15T05:35:38.700Z",
+            "modified": "2025-02-16T03:35:30.802Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2FjMmIxZDQxYTVkNmQyZTA2OTEwY2YiLCJpYXQiOjE3Mzk2NzY3MDAsImV4cCI6MTczOTY4MzkwMH0.GkNcsZR-4h8fGt2Swqj0aTij7mlvGpyMgqdBqNa_Sk4"
+                }
+            ]
+        }
+    ],
+    "ref": "Z9WYQywU7oBesf_h_vi2X1upJFmb1XzZ657itxDY8BfRLgEZGkqyFGFiu1rnNAKHEF0Xc19d3JTiQwlTZxix-w"
+}
